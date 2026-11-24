@@ -1,0 +1,55 @@
+{
+  "name": "fdic-bank-health-failures-mcp",
+  "version": "1.0.0",
+  "description": "FDIC Bank Health & Failures MCP server: live FDIC deposit insurance verification, quarterly Call Report financial health metrics (assets, uninsured deposits, Tier 1 leverage, ROA/ROE, noncurrent loans), side-by-side bank comparison, and failed bank tracker from api.fdic.gov. Hosted, no key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/fdic-bank-health-failures-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/fdic-bank-health-failures-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/free-servers/",
+  "bin": {
+    "fdic-bank-health-failures-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "fdic",
+    "banking",
+    "bank-health",
+    "bank-failures",
+    "fintech",
+    "treasury",
+    "compliance",
+    "call-report",
+    "cloudflare-workers"
+  ]
+}

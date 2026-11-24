@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.theluckystrike/fdic-bank-health-failures-mcp",
   "title": "FDIC Bank Health & Failures MCP",
-  "description": "Live FDIC bank health, Call Report financials, uninsured deposits, and failed bank tracker from api.fdic.gov.",
+  "description": "Live FDIC bank health, Call Report financials, uninsured deposits, and failed bank tracker.",
   "version": "1.0.0",
   "repository": {
     "url": "https://github.com/theluckystrike/fdic-bank-health-failures-mcp",
